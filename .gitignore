@@ -1,0 +1,230 @@
+
+# ------------------------
+# Flutter
+# ------------------------
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter-*
+.pub-cache/
+build/
+android/.gradle/
+android/app/debug/
+android/app/profile/
+android/app/release/
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+*.iml
+
+# ------------------------
+# Java
+# ------------------------
+*.class
+*.jar
+*.war
+*.ear
+*.log
+*.ctxt
+*.out
+*.iws
+*.ipr
+*.iml
+.idea/
+target/
+bin/
+
+# ------------------------
+# Rasa
+# ------------------------
+*.db
+__pycache__/
+*.py[cod]
+*.migrations/
+.env
+*.json
+*.pkl
+*.npy
+models/
+.rasa/
+
+# ------------------------
+# Miniconda / Conda
+# ------------------------
+.env
+.conda/
+*.conda
+*.ipynb_checkpoints
+*.log
+*.egg-info/
+*.eggs/
+env/
+venv/
+ENV/
+env.bak/
+*.bak
+
+# ------------------------
+# Python
+# ------------------------
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+pip-log.txt
+pip-delete-this-directory.txt
+htmlcov/
+.tox/
+.nox/
+.coverage
+.cache
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+
+# ------------------------
+# Docker
+# ------------------------
+*.tar
+*.img
+*.log
+docker-compose.override.yml
+.env
+
+# ------------------------
+# React Native (Expo)
+# ------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.expo/
+.expo-shared/
+android/app/build/
+ios/Pods/
+ios/build/
+web-build/
+*.keystore
+
+# ------------------------
+# C++
+# ------------------------
+*.obj
+*.o
+*.exe
+*.out
+*.gch
+*.pch
+*.pdb
+*.ilk
+*.idb
+*.res
+*.aps
+*.ncb
+*.sdf
+*.opensdf
+*.ipch
+*.dll
+*.lib
+*.a
+*.so
+
+# ------------------------
+# C# / Visual Studio
+# ------------------------
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.csproj.user
+*.csproj.vspscc
+*.vssscc
+*.pdb
+*.cache
+*.ilk
+*.log
+*.obj
+*.exe
+*.dll
+*.nupkg
+*.dbmdl
+*.bak
+*.psess
+*.vsp
+*.vsix
+TestResults/
+packages/
+bin/
+obj/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.ide
+
+# ------------------------
+# Node / NPM / General JS
+# ------------------------
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.pnpm-debug.log
+package-lock.json
+.pnpm-store/
+dist/
+build/
+.cache/
+.next/
+out/
+
+# ------------------------
+# OS / Miscellaneous
+# ------------------------
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+*.swp
+*.swo
+*.tmp
+*.bak
+*.old
+*.orig
+*.log
+*.rej
+*.sublime-workspace
+*.sublime-project
+*.vscode/
+
+# ------------------------
+# IDEs
+# ------------------------
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+*.code-workspace
+*.sublime-*
+
+# ------------------------
+# Jupyter Notebooks
+# ------------------------
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# ------------------------
+# Environment Files
+# ------------------------
+.env
+.env.*
+*.env
+*.env.*

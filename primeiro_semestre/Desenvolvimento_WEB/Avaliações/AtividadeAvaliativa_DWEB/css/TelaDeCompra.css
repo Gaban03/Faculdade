@@ -1,0 +1,40 @@
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(163, 163, 163, 0.625);
+}
+
+.compraRealizada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.compraRealizada #textoCompra {
+    margin-top: 20px;
+}
+
+.botaoVoltar {
+    margin-top: 20px;
+}
+
+button {
+    margin-right: 30px;
+    font-weight: bold;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    background-color: white;
+    transition: backgroud-color 0.5 ease, color 0.5s ease, transform 0.5 ease;
+}
+
+button:hover {
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    transform: scale(1.2);
+}

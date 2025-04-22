@@ -1,0 +1,50 @@
+div{
+    float: left;
+    padding: 10px 16px;
+    margin: 50px;
+}
+
+div.visivel{
+    width: 30%;
+    height: 120px;
+    border: 2px solid black;
+    overflow: visible;
+    background-color: rgba(255, 255, 0, 0.263);
+    color: black;
+}
+
+div.hidden{
+    width: 30%;
+    height: 120px;
+    border: 2px solid black;
+    overflow: hidden;
+    background-color: rgba(255, 255, 0, 0.263);
+    color: black;
+}
+
+div.scroll{
+    width: 30%;
+    height: 120px;
+    border: 2px solid black;
+    overflow: scroll;
+    background-color: rgba(255, 255, 0, 0.263);
+    color: black;
+}
+
+div.clip{
+    width: 30%;
+    height: 120px;
+    border: 2px solid black;
+    overflow: clip;
+    background-color: rgba(255, 255, 0, 0.263);
+    color: black;
+}
+
+div.auto{
+    width: 30%;
+    height: 120px;
+    border: 2px solid black;
+    overflow: auto;
+    background-color: rgba(255, 255, 0, 0.263);
+    color: black;
+}

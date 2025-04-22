@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.573);
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.containerCima{
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 100%;
+}
+
+.containerBaixo{
+    margin-top: 30px;
+    display: flexbox;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    float: right;
+    width: 100%;
+}
+
+#statusMaquina {
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    width: 500px;
+    height: 210px;
+    margin-top: 50px;
+    float: left;
+    margin-left: 100px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 10px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: ivory;
+}
+
+#tituloStatus{
+    font-size: 30px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    background-color: cadetblue;
+    scale: 1.04;
+    user-select: none;
+}
+
+#valorDoStatus {
+    font-size: 25px;
+    padding: 20px 20px;
+    color: black;
+    list-style: none;
+    display: flex;
+    gap: 100px;
+}
+
+/*
+    INICIO
+    Quadrados de status maquina
+*/
+
+#circulos{
+    display: flex;
+    gap: 100px;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+#circuloOFF{
+    float: left;
+    width: 30px;
+    height: 30px;
+    border: 3px solid black;
+    background-color: red;
+    border-radius: 30px;
+    opacity: 0.3;
+}
+
+#circuloON{
+    float: left;
+    width: 30px;
+    height: 30px;
+    border: 3px solid black;
+    background-color: greenyellow;
+    border-radius: 30px;
+    opacity: 0.3;
+}
+
+#circuloRUN{
+    float: left;
+    width: 30px;
+    height: 30px;
+    border: 3px solid black;
+    background-color: yellow;
+    border-radius: 30px;
+    opacity: 0.3;
+}
+
+#circulos p{
+    margin-top: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    user-select: none;
+}
+
+/*
+    FIM
+    Quadrados de status maquina
+*/
+
+
+#posicionamentoFerramenta {
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    background-color: ivory;
+    width: 500px;
+    height: 150px;
+    float: left;
+    margin-top: 50px;
+    margin-left: 70px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 10px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#listaEixos{
+    display: flex;
+    list-style: none;
+    gap: 100px;
+    font-weight: bold;
+}
+
+#tituloPosicionamento{
+    font-size: 25px;
+    padding: 20px 20px;
+    background-color: cadetblue;
+    border-radius: 10px;
+    scale: 1.04;
+    color: white;
+}
+
+#eixo_X{
+    margin-top: 25px;
+    font-size: 25px;
+    margin-left: 20px;
+    color: black;
+}
+
+#eixo_Y{
+    margin-top: 25px;
+    font-size: 25px;
+    margin-left: 20px;
+    color: black;
+}
+
+#eixo_Z{
+    margin-top: 25px;
+    font-size: 25px;
+    margin-left: 20px;
+    color: black;
+}
+
+#tituloPosicionamento {
+    font-size: 30px;
+}
+
+#taxaDeAvanco{
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    margin-left: 100px;
+    width: 500px;
+    float: left;
+    margin-top: 50px;
+    height: 150px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 10px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: ivory;
+}
+
+#titulotaxaAvanco {
+    font-size: 30px;
+    padding: 20px 20px;
+    background-color: cadetblue;
+    border-radius: 10px;
+    scale: 1.04;
+    user-select: none;
+}
+
+
+#valorAvanco{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+#rpmMaquina{
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    background-color: ivory;
+    width: 500px;
+    height: 210px;
+    float: left;
+    margin-top: 50px;
+    margin-left: 70px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 10px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#tituloRPM{
+    font-size: 30px;
+    padding: 20px 20px;
+    background-color: cadetblue;
+    border-radius: 10px;
+    scale: 1.04;
+    user-select: none;
+}
+
+tituloRPM
+#containerRPM {
+    min-width: 310px;
+    max-width: 400px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+#velocimetro {
+    display: flex;
+    user-select: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.item-circulo{
+    position: relative;
+    list-style: none;
+    width: 180px;
+    height: 170px;
+}
+
+.item-circulo svg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -20px;
+    left: 3px;
+    transform: rotate(180deg);
+}
+
+#rpm {
+    font-family: monospace;
+    font-weight: 500;
+    font-size: 2.5em;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-top: 72px;
+    margin-right: -5px;
+    font-weight: bold;
+}
+
+.item-circulo svg circle{
+    fill: transparent;
+    stroke-width: 28px;
+    stroke: var(--clr);
+    stroke-dasharray: 220px;
+    transform: translate(20px,-30px);
+}
+
+.item-circulo svg circle:nth-of-type(1){
+    stroke: black;
+}

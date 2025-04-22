@@ -1,0 +1,96 @@
+.modifica:hover {
+    background-color: blue;
+    font-size: 50px;
+    color: yellow;
+}
+
+/* área de navegação */
+
+.topnav {
+    overflow: hidden;
+    background-color: black;
+}
+
+/* Navbar links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Mudar a cor ao passar o mouse */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* Drop Menu */
+
+div.link2 {
+    background-color: rgb(16, 16, 2);
+    border-radius: 30cap;
+}
+
+div a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px;
+    display: inline-block;
+}
+
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.lista1 {
+    display: inline-block;
+}
+
+.lista1:hover {
+    background-color: #333;
+    border-radius: 10cap;
+}
+
+.lista1:hover .lista2 {
+    display: block;
+}
+
+.lista2 {
+    position: absolute;
+    width: 200px;
+    display: none;
+}
+
+.lista-link {
+    background: #555;
+    display: block;
+    border-radius: 10cap;
+}
+
+.link {
+    display: block !important;
+}
+
+.lista-link:hover {
+    background: #666;
+}
+
+div.fix {
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+/* Criando as colunas -  3 colunas */
+.coluna {
+    float: left;
+    width: 33.33%;
+}

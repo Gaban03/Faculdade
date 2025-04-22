@@ -1,0 +1,18 @@
+/* Define a largura e altura para o carrosel */
+.carousel {
+     width: 50%; /*Ocupa metade da largura da página */
+     margin: 0 auto; /*Centraliza o carrosel horizontalmente */
+}
+
+/* Faz as imagens do carrossel ocuparem toda a área do carrosel */
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estiliza a legenda do carrosel */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semitransparente para legibilidade */
+    color: #fff;
+    bottom: 20px; /* Ajusta a posição vertical de legenda */
+}

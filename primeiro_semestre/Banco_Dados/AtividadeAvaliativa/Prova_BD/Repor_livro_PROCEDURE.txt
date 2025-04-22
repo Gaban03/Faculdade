@@ -1,0 +1,24 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `repor_livro`(numero_livro INT, OUT saida VARCHAR(45), saida_rotulo VARCHAR(45))
+BEGIN
+	IF EXISTS (
+    SELECT e.id_estoque, l.titulo FROM estoque AS e
+    INNER JOIN livro AS l ON e.Livro_id_livro = l.id_livro
+    WHERE e.Livro_id_livro = numero_livro
+    ) THEN
+		BEGIN
+			SET saida_rotulo = "ERRO!!!";
+            SET saida = "Livro já está em estoque";
+		END;
+	ELSE
+		INSERT INTO estoque (Livro_id_livro) VALUES 
+		(numero_livro);
+        IF EXISTS (SELECT * FROM livro WHERE id_livro = numero_livro) THEN
+			SET saida_rotulo = "SUCESSO!!!";
+            SET saida = "Reposição realizada!";
+		ELSE
+			SET saida_rotulo = "ERRO!!!";
+			SET saida = "Reposição não realizada!";
+		END IF;
+    END IF;
+    SELECT saida_rotulo, saida;
+END

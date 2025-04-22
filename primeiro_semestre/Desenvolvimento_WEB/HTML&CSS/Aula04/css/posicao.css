@@ -1,0 +1,36 @@
+body{
+    height: 200vh;
+}
+
+div.absolute{
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+div.relative{
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 2px solid green;
+}
+
+div.peg{
+    position: sticky;
+    top: 0;
+    background-color: greenyellow;
+    border: 1px solid green;
+}
+
+div.over{
+    overflow: scroll;
+    height: 200px;
+    width: 49%;
+    border: 1px solid aqua;
+    background-color: darkgray;
+    float: left;
+    margin: 2px;
+}

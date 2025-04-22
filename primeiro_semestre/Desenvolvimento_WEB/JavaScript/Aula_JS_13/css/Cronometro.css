@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+} 
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(0, 136, 255, 0.711);
+}
+
+.containerCronometro {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    height: 150px;
+    font-weight: bold;
+    font-size: 100px;
+    box-shadow: 1px 1px 25px 1px black;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+p {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.containerBotoes {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+}
+
+#iniciar {
+    margin: 20px;
+    border-radius: 30px;
+    padding: 20px;
+    width: 20%;
+    font-size: 25px;
+    background-color: greenyellow;
+    box-shadow: 1px 10px 1px 1px rgb(0, 0, 0);
+}
+
+#pausar {
+    margin: 20px;
+    border-radius: 30px;
+    padding: 20px;
+    width: 20%;
+    font-size: 25px;
+    background-color: red;
+    font-weight: bold;
+    box-shadow: 1px 10px 1px 1px rgb(0, 0, 0);
+}
+
+#reiniciar {
+    margin: 20px;
+    border-radius: 30px;
+    padding: 20px;
+    width: 20%;
+    font-size: 25px;
+    background-color: orange;
+    box-shadow: 1px 10px 1px 1px rgb(0, 0, 0);
+}
+
+#iniciar:hover{
+    transform:scale(1.1);
+    cursor: pointer;
+}
+
+#pausar:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#reiniciar:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
+
+
+
+

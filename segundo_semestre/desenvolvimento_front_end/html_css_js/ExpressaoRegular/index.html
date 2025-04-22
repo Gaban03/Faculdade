@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function stringSearch(){
+            var str = "Expressões regulares em JavaScript na DevMedia!";
+            // var n = str.search(/[j+]/i);
+            var regexp = new RegExp(/[j+]/i);
+            var n = regexp.exec(str);
+            alert(n);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="stringSearch()">Script</button>
+</body>
+</html>

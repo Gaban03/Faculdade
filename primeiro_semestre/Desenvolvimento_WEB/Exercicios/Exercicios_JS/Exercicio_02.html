@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio_02</title>
+</head>
+
+<body>
+    <input type="text" id="ValorMetros" placeholder="Digite um valor em metros">
+    <p id="ResCm">Resultado: </p>
+    <br>
+    <p id="ResMil">Resultado: </p>
+    <br>
+    <button type="button" onclick="ConverterValor()">Converter</button>
+    <button type="button" onclick="Limpar()">Limpar</button>
+
+    <script>
+        function ConverterValor() {
+            var valorM = parseFloat(document.getElementById("ValorMetros").value)
+            var resMilimetros = valorM * 1000;
+            var resCentimetros = valorM * 100;
+
+            document.getElementById("ResCm").innerHTML = "Resultado: " + resCentimetros + "cm";
+            document.getElementById("ResMil").innerHTML = "Resultado: " + resMilimetros + "mm";
+        }
+
+        function Limpar() {
+
+            document.getElementById("ValorMetros").value = "";
+            document.getElementById("ResCm").innerHTML = "Resultado: " + "";
+            document.getElementById("ResMil").innerHTML = "Resultado: " + "";
+        }
+    </script>
+</body>
+
+</html>

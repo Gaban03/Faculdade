@@ -1,0 +1,92 @@
+let listaDeControladorLogico = [];
+
+const form = document.getElementById("form-itens");
+const itensInput = document.getElementById("receber-item");
+const codigoInput = document.getElementById("receber-codigo");
+const ulItens = document.getElementById("lista-de-controlador");
+const ulItensComprados = document.getElementById("itens-comprados");
+const listaRecuperada = localStorage.getItem('listaDeControladorLogico');
+
+function atualizaLocalStorage() {
+    localStorage.setItem('listaDeControladorLogico', JSON.stringify(listaDeControladorLogico));
+}
+
+if (listaRecuperada) {
+    listaDeControladorLogico = JSON.parse(listaRecuperada);
+    mostrarItem();
+} else {
+    listaDeControladorLogico = [];
+}
+
+form.addEventListener("submit", function (evento) {
+    evento.preventDefault();
+    salvarItem();
+    mostrarItem();
+    itensInput.focus();
+});
+
+function salvarItem() {
+    const codigo = codigoInput.value;
+    const comprasItem = itensInput.value;
+
+    if (codigo && comprasItem) {
+        listaDeControladorLogico.push({
+            codigo: codigo,
+            valor: comprasItem,
+            checar: false
+        });
+    }
+    codigoInput.value = '';
+    itensInput.value = '';
+}
+
+function mostrarItem() {
+    ulItens.innerHTML = '';
+    ulItensComprados.innerHTML = '';
+    
+    listaDeControladorLogico.forEach((elemento, index) => {
+        if (elemento.checar) {
+            ulItensComprados.innerHTML += `
+                <li class="item-compra is-flex is-justify-content-space-between" data-value="${index}">
+                    <div>
+                        <input type="checkbox" checked class="is-clickable">
+                        <span class="itens-comprados is-size-5">${elemento.codigo} - ${elemento.valor}</span>
+                        <i class="fa-solid fa-trash is-clickable deletar"></i>
+                    </div>
+                </li>
+            `;
+        } else {
+            ulItens.innerHTML += `
+                <li class="item-compra is-flex is-justify-content-space-between" data-value="${index}">
+                    <div>
+                        <input type="checkbox" class="is-clickable">
+                        <span class="is-size-5">${elemento.codigo} - ${elemento.valor}</span>
+                        <i class="fa-solid fa-trash is-clickable deletar"></i>
+                    </div>
+                </li>
+            `;
+        }
+    });
+
+    const inputCheck = document.querySelectorAll('input[type="checkbox"]');
+    inputCheck.forEach(i => {
+        i.addEventListener('click', (evento) => {
+            const valorDoElemento = evento.target.parentElement.parentElement.getAttribute('data-value');
+            listaDeControladorLogico[valorDoElemento].checar = evento.target.checked;
+            console.log(listaDeControladorLogico[valorDoElemento].checar);
+            mostrarItem();
+        });
+    });
+
+    const deletarObjetos = document.querySelectorAll(".deletar");
+
+    deletarObjetos.forEach(i => {
+        i.addEventListener('click', (evento) => {
+            valorDoElemento = evento.target.parentElement.getAttribute('data-value');
+            listaDeControladorLogico.splice(valorDoElemento, 1);
+            mostrarItem();
+        });
+    });
+
+    atualizaLocalStorage();
+}

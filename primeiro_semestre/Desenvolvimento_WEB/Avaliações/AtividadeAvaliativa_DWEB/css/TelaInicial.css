@@ -1,0 +1,108 @@
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgba(163, 163, 163, 0.625);
+}
+
+/* CABEÇALHO */
+
+/* estilização para o cabeçalho */
+.cabecalho {
+    background-color: #ff0000;
+    text-align: center;
+    padding: 20px 0;
+    border: 10px solid rgb(255, 0, 0);
+    position: relative;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+}
+
+
+
+/* estilização para o menu */
+#menu {
+    background-color: #050101;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    font-size: 15px;
+}
+
+#menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+    padding: 20px;
+}
+
+/* ao passar o mouse o elemento do menu mudará a cor do texto e envolta de sí */
+#menu a:hover {
+    color: #ff0000;
+    background-color: #dcd6d643;
+}
+
+
+.dropdown {
+    display: inline-block;
+}
+
+/* essa classe contém os elementos do menu dropdown */
+.container-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #050101;
+}
+
+.container-dropdown a {
+    color: #fff;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+/* essa classe faz com ao passar o mouse o dropdown os elementos dentro apareçam */
+.dropdown:hover .container-dropdown {
+    display: block;
+}
+
+/* Conteudo */
+.conteudo {
+    display: flex;
+    align-items: center;
+}
+
+/*Slogan*/
+#slogan {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#slogan h2{
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#slogan p{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 25px;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    background-color: #000000; 
+    color: white;
+    text-align: center; 
+    font-size: 20px;
+    padding: 2.5%;
+    word-spacing: 7px;
+}
+

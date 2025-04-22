@@ -1,0 +1,7 @@
+C:\Users\Aluno\Desktop\aula> npm create vite@latest // Cria um projeto react no terminal do Visual Studio
+
+
+C:\Users\Aluno\Desktop\aula\comum> npm i // Cria as dependências do nosso projeto React
+
+
+C:\Users\Aluno\Desktop\aula\comum> npm run dev // Comando pra rodar o projeto React

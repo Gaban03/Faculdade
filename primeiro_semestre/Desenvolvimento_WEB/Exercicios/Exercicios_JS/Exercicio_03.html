@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio_03</title>
+</head>
+
+<body>
+    <script>
+        var nome = window.prompt('Digite o nome do Aluno: ');
+        document.write(`Nome do aluno: ${nome}`);
+
+        function CalcularMedia() {
+            var nota_1 = parseInt(document.getElementById("Nota1").value);
+
+            var nota_2 = parseInt(document.getElementById("Nota2").value);
+
+            var nota_3 = parseInt(document.getElementById("Nota3").value);
+
+            var media = (nota_1 + nota_2 + nota_3) / 3;
+
+            document.getElementById("media").style.fontWeight = ("bold");
+            document.getElementById("media").innerHTML = "Média: " + media;
+
+            if (media < 20) {
+                document.getElementById("aprovacao").style.color = "Red";
+                document.getElementById("aprovacao").innerHTML = "REPROVADO";
+            } else if (media >= 20 && media < 50) {
+                document.getElementById("aprovacao").style.color = "Yellow";
+                document.getElementById("aprovacao").innerHTML = "RECUPERAÇÃO";
+            } else if (media >= 50 && media < 90 ){
+                document.getElementById("aprovacao").style.color = "Green";
+                document.getElementById("aprovacao").innerHTML = "APROVADO";
+            } else if(media >= 90 && media == 100) {
+                document.getElementById("aprovacao").style.color = "Blue";
+                document.getElementById("aprovacao").innerHTML = "APROVADO COM LOUVOR";    
+            }
+        }
+    </script>
+    <br>
+    <br>
+    <input type="text" id="Nota1" placeholder="Digite a nota 1: ">
+    <input type="text" id="Nota2" placeholder="Digite a nota 2: ">
+    <input type="text" id="Nota3" placeholder="Digite a nota 3: "> <br><br>
+    <button type="button" onclick="CalcularMedia()">Calcular Média</button>
+    <br>
+    <p id="media"></p>
+    <p id="aprovacao"></p>
+</body>
+
+</html>

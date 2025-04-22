@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <pre>
+        <form action="form1">
+            <!-- <label>Nome: <label>
+                <input type="text" name="nome" onblur="condicao(this.value)">
+                <input type="button" value="adiciona" onclick="condicao()"></input>
+                <input type="button" value="adiciona" onclick="para()"></input>
+                <input type="text" name="nome" id="numero">
+                <input type="button" value="Verifica" onclick="verifica()">
+                <input type="button" value="Caso" onclick="caso()"> -->
+            <input type="text" id="valorEntrada">
+            <input type="button" value="Confere" onclick="vstring()">
+
+            <input type="button" value="Bom dia" id="b" onmousedown="movermouse()" style="background-color: gray;">
+            <input type="button" value="Bom dia" id="b" onmousedown="movermouse()" style="background-color: gray;">
+        </form>
+    </pre>
+
+    <form name="form2">
+        <table id="tb1" style="border: 1px solid;">
+            <thead>
+                <tr style="border: 1px solid;">
+                    <td id="li">Identificação</td>
+                    <td id="li">Valor</td>
+                </tr>
+            </thead>
+        </table>
+        <input type="button" class="botao" value="Adiciona" onclick="tab()">
+    </form>
+
+    <h1 id="dt"></h1>
+    <h1 id="h"></h1>
+    <h1 id="m"></h1>
+    <h1 id="d"></h1>
+    <button onclick="data()">Data</button>
+
+    <form name="nom">
+        <table id="tb2" style="border: 1px solid;">
+            <thead>
+                <tr style="border: 1px solid;">
+                    <td id="li">Nome</td>
+                    <td id="li">Idade</td>
+                </tr>
+            </thead>
+        </table>
+        <input type="button" value="lista" onclick="nomes()">
+    </form>
+
+    <h1 id="h"></h1>
+    <h1 id="mensagem"></h1>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0;
+  }
+  
+  nav {
+    background-color: black;
+    padding: 20px;
+  }
+  
+  a {
+    color: white;
+    padding-right: 20px;
+  }
+  
+  a:hover {
+    background-color: rgba(128, 128, 128, 0.493);
+    padding: 10px;
+    border-radius: 50px;
+    color: rgba(255, 255, 255, 0.623);
+  }
+  

@@ -1,0 +1,30 @@
+/* VISUALIZA AS TABELAS CRIADAS */
+show table status;
+
+/* FAZ O PREENCHIMENTO DOS DADOS CHAMANDO O PROCEDURE cadastro_aluno, E NÓS INSERIMOS OS VALORES */
+call cadastro_aluno("Vinicius Gaban", "472.039.668-28","Masculino","SP","São Carlos","Rua Rodolfo Luporini", 
+305,"33991668","(16)991000062",@rotulo_saida,@saida);
+call cadastro_aluno("Loudes Gianotti", "487.349.221-10","Feminino","SP","São Carlos","Rua José Favoretto", 
+257,"86541138","(16)992345660",@rotulo_saida,@saida);
+call cadastro_aluno("Isabella Silvatti", "231.786.098-01","Feminino","MA","Caxias","Rua Roberto Símonsen", 
+200,"22651348","(16)991352865",@rotulo_saida,@saida);
+call cadastro_aluno("Carlos Marchetti", "001.234.639-32","Masculino","SP","São Paulo","Avenida Paulista", 
+104,"44647321","(16)981789053",@rotulo_saida,@saida);
+call cadastro_aluno("Guilherme", "222.333.555-11","Masculino","NY","Nova York","Quinta Avenida", 
+20,"54637289","(11)453256062",@rotulo_saida,@saida);
+
+
+/* FAZ O PREENCHIMENTO DOS DADOS CHAMANDO O PROCEDURE cadastro_curso, E NÓS INSERIMOS OS VALORES  */
+call cadastro_curso("Java","80","1300,00","Tarde",@rotulo_saida,@saida);
+call cadastro_curso("Java Script","50","2500,00","Manhã",@rotulo_saida,@saida);
+call cadastro_curso("Banco de Dados","90","1500,00","Noite",@rotulo_saida,@saida);
+call cadastro_curso("Python","70","4000,00","Noite",@rotulo_saida,@saida);
+
+
+/* FAZ O PREENCHIMENTO DOS DADOS CHAMANDO O PROCEDURE cadastro_matricula, E NÓS INSERIMOS OS VALORES  */
+call cadastro_matricula(1,2,"2024-04-16",@rotulo_saida,@saida);
+call cadastro_matricula(1,1,"2023-02-27",@rotulo_saida,@saida);
+call cadastro_matricula(4,3,"2018-06-30",@rotulo_saida,@saida);
+call cadastro_matricula(5,3,"2018-06-30",@rotulo_saida,@saida);
+call cadastro_matricula(3,1,"2023-02-27",@rotulo_saida,@saida);
+call cadastro_matricula(2,3,"2000-08-09",@rotulo_saida,@saida);

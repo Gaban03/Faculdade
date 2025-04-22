@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio_01</title>
+</head>
+
+<body>
+
+    <!-- Exercicio_01 -->
+    <input type="text" id="ValorKHW" placeholder="Digite o preço em KWH: ">
+    <input type="text" id="QuantidadeConsumida" placeholder="Digite a quantidade consumida: ">
+    <p id="resultado">Resultado: </p>
+    <button type="button" onclick="Calcular()">Calcular</button>
+    <button type="button" onclick="Limpar()">Limpar</button>
+
+    <script>
+        function Calcular() {
+            var KHW = parseFloat(document.getElementById("ValorKHW").value);
+            var Qtd_Consumida = parseFloat(document.getElementById("QuantidadeConsumida").value);
+            var resultado = KHW * Qtd_Consumida;
+
+            if (resultado >= 13) {
+                document.getElementById("resultado").innerHTML = "Rsultado: R$" + resultado;
+            } else {
+                document.getElementById("resultado").innerHTML = "Resultado: R$" + 13;
+            }
+        }
+
+        function Limpar() {
+
+            document.getElementById("ValorKHW").value = "";
+            document.getElementById("QuantidadeConsumida").value = "";
+            document.getElementById("resultado").innerHTML = "Resultado: " + "";
+        }
+    </script>
+</body>
+
+</html>

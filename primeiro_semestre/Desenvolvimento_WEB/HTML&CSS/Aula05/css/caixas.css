@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: #ccc;
+    border: 2px;
+}
+
+.container {
+    display: flex; /*Definir um flex container*/
+    max-width: 960px;
+    flex-wrap: wrap;
+    /*flex-direction: row;*/
+    /*text-align: center;*/ /*Centralizar elementos passará para o centro*/
+}
+
+.block {
+    box-sizing: border-box;
+    width: 280px;
+    height: 200px;
+    font-size: 24px;
+    background-color: #fff;
+    margin: 20px;
+    text-align: center;/*centraliza somente elemento do item*/
+}
+
+.block:hover {
+    border: 2px solid red;
+    /*width: 275px;*/ /*Retirar o ajuste manual*/
+}
+
+.opacidade {
+    opacity: 0.5;
+}
+
+.opacidade:hover {
+    opacity: 1.0;
+}

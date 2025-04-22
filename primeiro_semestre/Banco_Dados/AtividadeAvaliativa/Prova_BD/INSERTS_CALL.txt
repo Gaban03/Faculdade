@@ -1,0 +1,65 @@
+INSERT INTO cliente  (cpf,telefone_fixo,telefone_celular,nome,cep,rua,bairro,estado,cidade,numero) VALUES
+("472.039.668-28","(16)3393-8765", "(16)991000062", "Vinicius Gaban","13564-520", "Rua Rodolfo Luporini", "Parque Industrial", "SP", "São Carlos", 305),
+("678.909.228-11","(16)3230-3315", "(16)981454376", "Matheus Redondo","12474-322", "Rua Josè Favoretto", "Jardim Hikare", "SP", "São Carlos", 257),
+("123.465.876-09","(11)3222-8885", "(11)981011132", "Severino Silva","11760-780", "Rua Ambrosio Fonseca", "Zavaglia", "SP", "São Paulo", 100);
+
+INSERT INTO livro (id_livro,autor, editora, preco, titulo) VALUES
+(934 ,"J.K. Rowling", "Rocco", "37,42", "Harry Potter e a Pedra Filosofal"),
+(206,"Ziraldo", " Melhoramentos", "39,20", "O Menino Maluquinho"),
+(198,"Jeff Kinney", "VR Editora", "49,50", "Diário de um Banana 3: A gota d’água");
+
+INSERT INTO estoque (Livro_id_livro) VALUES 
+(934),
+(206),
+(198);
+
+INSERT INTO venda (data_venda, Livro_id_livro, Cliente_cpf) VALUES
+("17/02/2024", 934, "472.039.668-28"),
+("30/03/2012", 206, "123.465.876-09"),
+("10/02/2024", 198, "678.909.228-11");
+
+CALL Venda_Livro(198, "123.465.876-09", "2024-02-05", @saida, @saida_rotulo);
+INSERT INTO cliente  (cpf,telefone_fixo,telefone_celular,nome,cep,rua,bairro,estado,cidade,numero) VALUES
+("472.039.668-28","(16)3393-8765", "(16)991000062", "Vinicius Gaban","13564-520", "Rua Rodolfo Luporini", "Parque Industrial", "SP", "São Carlos", 305),
+("678.909.228-11","(16)3230-3315", "(16)981454376", "Matheus Redondo","12474-322", "Rua Josè Favoretto", "Jardim Hikare", "SP", "São Carlos", 257),
+("123.465.876-09","(11)3222-8885", "(11)981011132", "Severino Silva","11760-780", "Rua Ambrosio Fonseca", "Zavaglia", "SP", "São Paulo", 100);
+
+INSERT INTO livro (id_livro,autor, editora, preco, titulo) VALUES
+(789, "George Orwell", "Companhia das Letras", 29.90, "1984"),
+(456, "Harper Lee", "Editora José Olympio", 45.00, "O Sol é para Todos"),
+(123, "Gabriel García Márquez", "Record", 55.80, "Cem Anos de Solidão"),
+(567, "Machado de Assis", "Martin Claret", 25.99, "Dom Casmurro"),
+(890, "Paulo Coelho", "Sextante", 34.90, "O Alquimista"),
+(234, "Stephen King", "Suma de Letras", 42.70, "It: A Coisa"),
+(678, "Clarice Lispector", "Rocco", 27.30, "A Hora da Estrela"),
+(345, "Agatha Christie", "L&PM Editores", 29.90, "O Assassinato no Expresso Oriente"),
+(901, "Markus Zusak", "Intrínseca", 39.90, "A Menina que Roubava Livros"),
+(543, "Jojo Moyes", "Intrínseca", 44.90, "Como Eu Era Antes de Você"),
+(934 ,"J.K. Rowling", "Rocco", "37,42", "Harry Potter e a Pedra Filosofal"),
+(206,"Ziraldo", " Melhoramentos", "39,20", "O Menino Maluquinho"),
+(198,"Jeff Kinney", "VR Editora", "49,50", "Diário de um Banana 3: A gota d’água");
+
+
+INSERT INTO estoque (Livro_id_livro) VALUES 
+(934),
+(206),
+(198);
+
+INSERT INTO venda (data_venda, Livro_id_livro, Cliente_cpf) VALUES
+("17/02/2024", 934, "472.039.668-28"),
+("30/03/2012", 206, "123.465.876-09"),
+("10/02/2024", 198, "678.909.228-11");
+
+CALL Venda_Livro(198, "123.465.876-09", "2024-02-05", @saida, @saida_rotulo);
+
+CALL repor_livro(198, @saida, @saida_rotulo);
+
+CALL relatorio_TodasAsVendas();
+
+CALL relatotio_vendaPorMes("2024-02-01", "2024-02-28", @saida, @saida_rotulo);
+
+CALL relatorio_compraPorCliente("472.039.668-28", "2024-02-01", "2024-02-28", @saida, @saida_rotulo);
+
+CALL relatorio_qtdDeLivrosVendidos("Harry Potter e a Pedra Filosofal", "2024-02-01", "2024-02-28", @saida, @saida_rotulo);
+
+CALL relatorio_valorVendidoNoMes("2024-02-01", "2024-02-28", @saida);

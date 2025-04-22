@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro</title>
+    <link rel="stylesheet" href="css/Cronometro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="containerCronometro">
+            <div id="horas">00</div>
+            <p>:</p>
+            <div id="minutos">00</div>
+            <p>:</p>
+            <div id="segundos">00</div>
+            <p>:</p>
+            <div id="milisegundos">000</div>
+        </div>
+        <div class="containerBotoes">
+            <button id="iniciar" onclick="iniciarCronometro()">
+                <i class="fas fa-play"></i>
+            </button>
+            <button id="pausar" onclick="pausarCronometro()">
+                <i class="fas fa-stop"></i>
+            </button>
+            <button id="reiniciar" onclick="reiniciarCronometro()">
+                <i class="fa fa-refresh fa-spin"></i>
+            </button>
+        </div>
+    </div>
+    <script src="js/Cronometro.js"></script>
+</body>
+
+</html>

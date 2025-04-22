@@ -1,0 +1,116 @@
+.btn {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.btn1 {background-color: #04AA60;} /*Green*/
+.btn2 {background-color: #008CBA;} /*Blue*/
+.btn3 {background-color: #ff0000;} /*Red*/
+
+
+/*Estilizando com passar mouse*/
+.buttom {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.buttom1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #04AA60;
+}
+
+.buttom1:hover {
+    background-color: #04AA60;
+    color: white;
+}
+
+.buttom2 {
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA;
+}
+
+.buttom2:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+.buttom3 {
+    background-color: rgb(255, 0, 0);
+    color: black;
+    border: 2px solid #000000;
+}
+
+.buttom3:hover {
+    background-color: #89898997;
+    color: white;
+}
+
+
+/*Botão arredondado*/
+
+.btnredondo {
+    border: 1px solid blue;
+    border-radius: 20px;
+    color: blue;
+    padding: 15px 32px;
+    background-color: white;
+    transition: backgroud-color 0.5 ease, color 0.5s ease, transform 0.5 ease;
+}
+
+.btnredondo:hover {
+    background-color: blue;
+    color: white;
+    transform: scale(1.2);
+}
+
+
+/*Botão pulsante*/
+
+.botao {
+    background-color: #ffc107;
+    border: none;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+0% {
+    transform: scale(1);
+}
+50% {
+    transform: scale(5.1);
+}
+100% {
+    transform: scale(1);
+}
+}
+
+
+.botao:hover {
+    animation: none;
+}

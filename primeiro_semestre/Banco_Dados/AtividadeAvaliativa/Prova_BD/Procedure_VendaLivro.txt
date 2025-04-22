@@ -1,0 +1,33 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `Venda_Livro`(id_livro_Livro INT, cpf_cliente_Cliente VARCHAR(45), data_da_venda_Venda DATE ,OUT saida VARCHAR(45), saida_rotulo VARCHAR(45))
+BEGIN
+	IF EXISTS(
+		SELECT e.Livro_id_livro 
+		FROM estoque AS e
+		WHERE e.Livro_id_livro = id_livro_Livro
+	) AND EXISTS(
+		SELECT c.cpf
+		FROM cliente AS c
+		WHERE c.cpf = cpf_cliente_Cliente
+	)THEN
+		BEGIN
+			INSERT INTO venda (data_venda, Livro_id_livro, Cliente_cpf) VALUES
+            (data_da_venda_Venda, id_livro_Livro,  cpf_cliente_Cliente);
+            
+            IF ROW_COUNT() = 0 THEN
+				SET saida_rotulo = "ERRO!!!";
+                SET saida = "Venda não efetuada!";
+			ELSE 
+				DELETE e FROM estoque AS e
+                INNER JOIN livro AS l ON e.Livro_id_livro = l.id_livro
+                WHERE e.Livro_id_livro = id_livro_Livro;
+                SET saida_rotulo = "SUCESSO!!!";
+                SELECT saida_rotulo;
+                SET saida = "Venda efetuada com sucesso!";
+                SELECT saida;
+            END IF;
+		END;
+    ELSE
+		SET saida = "Livro não está em estoque, ou cpf inválido";
+        SELECT saida;
+	END IF;
+END

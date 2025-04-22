@@ -1,0 +1,134 @@
+    <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Minha primeira página com JS</h1>
+    <p>Esta é minha primeira página utilizando JavaScript</p>
+    <p id="resultado"> </p>
+
+
+    <br>
+    <hr style="border: 3px solid rgb(73, 73, 73);">
+
+
+    <h1>Escrevendo em elemento html</h1>
+    <p id="man"></p>
+    <h1 id="tit1"></h1>
+    <div id="div1"> colocando cor na div com JS</div>
+
+
+    <br>
+    <hr style="border: 3px solid rgb(73, 73, 73);">
+
+
+    <h1>Trocando texto do elemento</h1>
+    <p id="txt1">Este é o texto que será alterado</p>
+    <button onclick="document.getElementById('txt1').innerHTML = 'Texto modificado';" >Mudar</button>
+    <button onclick="document.getElementById('txt1').innerHTML = 'Este é o texto que será alterado';">Voltar</button>
+    <button onclick="document.getElementById('txt1').style.color = 'red';">Cor do Texto</button>
+    <button onclick="document.getElementById('txt1').style.color = 'black';">Voltar cor</button>
+    <button onclick="document.getElementById('txt1').style.fontSize = '30pt';" >Muda tamanho da fonte</button>
+    <button onclick="document.getElementById('txt1').style.fontSize = '15pt';" >Volta tamanho</button>
+
+    
+    <br>
+    <hr style="border: 3px solid rgb(73, 73, 73);">
+
+    <!-- Adiciona palavras no paragrafo através de uma função
+    <p id="paragrafo">Olá!</p>
+    <script>
+        function ola(){
+            document.getElementById("paragrafo").innerHTML = "Olá mundo";
+        }
+    </script>
+    <button type="button" onclick="ola()">Olá mundo</button> -->
+
+
+        
+    <br>
+    <hr style="border: 3px solid rgb(73, 73, 73);">
+
+
+    <p id="paragrafo">Olá!</p>
+    <script>
+        function mFuncao(){
+            var x = document.getElementById("paragrafo");
+
+            if(x.innerHTML=="Olá!"){
+                x.innerHTML="Hello!";
+            }
+            else{
+                x.innerHTML="Olá!";
+            }
+        }
+    </script>
+    <button type="button" onclick="mFuncao();">Trocar</button>
+
+
+            
+    <br>
+    <hr style="border: 3px solid rgb(73, 73, 73);">
+
+
+    <h1>Soma de dois valores</h1>
+    <script>
+        function Soma(){
+            
+            var v1 = parseInt(document.getElementById("v1").value);
+            var v2 = parseInt(document.getElementById("v2").value);
+            document.getElementById("res").innerHTML = "Resposta: " + (v1 + v2);
+        }
+
+        function Limpa(){
+
+            document.getElementById("v1").value = "";
+            document.getElementById("v2").value = "";
+            document.getElementById("res").innerHTML = "Resposta: " + "";
+        }
+    </script>
+    <input type="text" id="v1" placeholder="Insira o primeiro valor"> <br>
+    <input type="text" id="v2" placeholder="Insira o segundo valor">
+    <p id="res">Resultado: </p>
+    <button type="button" onclick="Soma()">Soma</button>
+    <button type="button" onclick="Limpa()">Limpa</button>
+    <script>
+        // // Exibe nome digitado
+        // window.alert('Vamos começar!')
+        // window.confirm('Você está pronto?')
+        // var nome = window.prompt('Qual é seu nome?')
+        // window.alert('Muito prazer em recebê-lo '+ nome)
+        // document.write(`Muito prazer em recebê-lo ${nome}`)
+    </script>
+
+
+    <script>
+        // // Faz a soma dos número e depois exibe o resultado
+        // var numero1 = window.prompt('Digite um número: ')
+        // var numero2 = window.prompt('Digte outro número: ')
+        // var resultado = Number.parseInt(numero1) + Number.parseInt(numero2)
+        // window.alert('O resultado da soma de ' + numero1 + ' com ' + numero2 + ' é ' + resultado)
+    </script>
+
+
+    <script>
+        // // Pega o tamanho de um String
+        // var nome = window.prompt('Digite uma palavra: ')
+        
+        // document.write("A palavra " + nome + " Contém " + nome.length + " letras.")
+    </script>
+
+
+    <script>
+        // Interagindo com elemento html
+        // document.getElementById("man").innerHTML = "Hello Word";
+        // document.getElementById("tit1").innerHTML = "Este é um titulo";
+        // document.getElementById("div1").style.background = "black";
+        // document.getElementById("div1").style.color = "white";
+        // document.getElementById("div1").style.textAlign = "center";
+    </script>
+</body>
+</html>

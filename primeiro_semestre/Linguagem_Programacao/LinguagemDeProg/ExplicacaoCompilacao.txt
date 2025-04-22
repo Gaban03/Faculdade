@@ -1,0 +1,9 @@
+C:\Users\Aluno\Desktop\LIP>javac QuebraDeLinha.java
+
+C:\Users\Aluno\Desktop\LIP>java QuebraDeLinha
+Olá Vinicius
+ Tudo bem ?
+
+O javac é para fazer a compilação do arquivo
+
+O java é para o  código ser exibido em tela 

@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+.centro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div{
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+}
+
+figure {
+    width:  50vw;
+    height: 30vw;
+} 
+
+img {
+    width: 50vw;
+    height: 30vh;
+    object-fit: contain;
+    clip-path: circle();
+}
+

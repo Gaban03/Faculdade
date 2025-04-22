@@ -1,0 +1,17 @@
+/* CRIAÇÃO DE CONSULTAS JOINS PEGANDO CAMPOS DE OUTRAS TABELAS E JUNTANDO EM UMA EXIBIÇÃO SÓ*/
+
+SELECT * FROM aluno AS a
+INNER JOIN associativa_realiza AS r ON a.id_aluno = r.ALUNO_id_aluno
+ORDER BY a.nome ASC;
+
+/* JEITO ERRADO DE SE FAZER, QUE NO CASO É TENTAR PEGAR UM CAMPO DIRETO DA TABELA CURSO PELA TABELA ALUNO */
+
+SELECT * FROM aluno AS a
+INNER JOIN associativa_realiza AS c ON a.id_aluno = c.CURSO_id_curso
+ORDER BY a.nome ASC;
+
+/* CRIAÇÃO DE CONSULTAS JOINS PEGANDO CAMPOS DE OUTRAS TABELAS E JUNTANDO EM UMA EXIBIÇÃO SÓ, EX: nome do aluno e nome do curso*/
+
+SELECT a.nome, c.nome_curso FROM aluno AS a
+INNER JOIN associativa_realiza AS r ON a.id_aluno = r.ALUNO_id_aluno
+INNER JOIN curso AS c ON r.CURSO_id_curso = c.id_curso;

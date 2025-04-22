@@ -1,0 +1,16 @@
+#Config
+#Fri Apr 19 18:39:52 BRT 2024
+cfg.ancorador=true
+cfg.apagartextoaoeditar=true
+cfg.autosalvarintervalo=5
+cfg.gradelargura=23
+cfg.location.salvar=true
+cfg.location.x=-7
+cfg.location.y=-7
+cfg.mostrardimensoesaomover=true
+cfg.mostrargrade=true
+cfg.mostrarids=false
+cfg.mostrartooltips=true
+cfg.propaguedeletetolines=true
+cfg.recentes=D\:\\Faculdade_SENAI_1\u00B0Semestre\\Banco_Dados\\Modelo_Logico\\1\u00BA apresenta\u00E7\u00E3o.brM3;D\:\\Faculdade_SENAI_1\u00B0Semestre\\Banco_Dados\\Modelo_Logico\\Logico.brM3;C\:\\Users\\Aluno\\Downloads\\BD_Livraria (1).brM3;C\:\\Users\\Aluno\\Downloads\\BD_Livraria.brM3
+cfg.tipodefault=0

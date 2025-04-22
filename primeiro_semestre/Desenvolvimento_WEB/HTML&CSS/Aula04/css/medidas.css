@@ -1,0 +1,29 @@
+div.px1{
+    height: 100px;
+    width: 800px;
+    background-color: blue;
+}
+
+div.incli{
+    width: 5in;
+    height: 2in;
+    background-color: rgb(255, 255, 0);
+}
+
+div.porcentagem{
+    width: 80%;
+    height: 100px;
+    background-color: green;
+}
+
+div.rem1{
+    width: 50rem;
+    height: 3rem;
+    background-color: red;
+}
+
+div.view1{
+    width: 50vw;
+    height: 10vw;
+    background-color: blueviolet;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Teste de Formulário</h1>
+        <form action="./submit_account" method="POST" class="formulario">
+            <fieldset>
+                <legend>Cadastro</legend>
+                <label for="user_name">Nome</label>
+                <input type="text" id="user_name" name="user_name" minlength="3"><br><br>
+
+                <label for="user_email">E-mail</label>
+                <input type="email" id="user_email" name="user_email" minlength="4"><br><br>
+
+                <label for="user_cpf">CPF</label>
+                <input type="text" id="user_cpf" name="user_cpf" minlength="11" maxlength="14"><br><br>
+
+                <label for="password">Senha</label>
+                <input type="password"  id="password" name="password" minlength="8"><br><br>
+
+                <label for="data_nasc">Data de Nascimento</label>
+                <input type="date" id="data_nasc" name="data_nasc"><br><br>
+
+                <label for="tel_fixo">Telefone Fixo</label>
+                <input type="tel" name="tel_fixo" id="tel_fixo" minlength="12" maxlength="12" title="Digite o telefone com o DDD"><br><br>
+
+                <label for="tel_celular">Telefone Celular</label>
+                <input type="tel" name="tel_celular" id="tel_celular" minlength="12" maxlength="16" title="Digite o telefone com o DDD"><br><br>
+
+                <div>
+                    <input type="checkbox" id="termos" name="termos">
+                    <label for="termos">Aceita os termos do contrato</label>
+                </div><br><br>
+                <input type="submit" value="Cadastrar" class="botao">
+                
+            </fieldset>
+        </form>
+    </div>
+
+<script src="js/main.js"></script>
+</body>
+
+</html>

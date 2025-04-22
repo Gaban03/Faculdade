@@ -1,0 +1,30 @@
+body {
+    background-color: blue;
+}
+
+h1 {
+    color: aqua;
+    text-align: center;
+}
+
+p {
+    color: red;
+}
+
+p.center {
+    text-align: center;
+}
+
+p.grande {
+    font-size: 100px;
+}
+
+div {
+    background-color: red; /* Estiliza cor de fundo vermelha*/
+     border-width: 3px;   /* Estiliza a sua largura de borda */
+    border-style: solid; /* Estiliza seu estilo de borda */
+    border-color: yellow; /* Estiliza sua cor de borda */
+    text-align: center; /* Estiliza o texto no centro */
+    color: white; /* Estiliza a cor do texto em branco */
+    height: 40px; /* Estiliza a altura da div em 40px */
+}
